@@ -1,5 +1,4 @@
- 
-            <?php 
+<?php 
             
             if($count < 1) {
                 
@@ -121,8 +120,7 @@
                 </p>
                 
                 <p>
-                    <i><?php echo $find_rs['Description'] ?></i>
-                </p>
+                    <i><?php // echo $find_rs['Description'] ?></i>
             
             </div> <!-- / results -->
             
@@ -139,5 +137,3 @@
             
             ?>
             
-            
-        

@@ -12,9 +12,13 @@
                 
             </p>
             <hr/>
-            <?php echo $find_rs['Description'] ?>    
-        
-        
+            <?php echo $find_rs['Description'] ?>  
+            
+            
+            
+            
+            
+            
             <!-- Genre Dropdown -->
                 
             <select class="search adv" name="genre">
@@ -98,4 +102,18 @@
                 
                 </div> <!-- / age amount -->
             </div> <!-- / age flex box -->
-                
+            
+    $genre = mysqli_real_escape_string($dbconnect, $_POST['genre']);
+    $cost= mysqli_real_escape_string($dbconnect, $_POST['cost']);
+
+    if (isset($_POST['in_app'])) {
+        $in_app = 0;
+    }
+
+    else {
+        $in_app = 1;
+    }
+        
+    AND `Genre` LIKE '%$genre%'
+    AND `Price` <= '%$cost%'
+    AND (`In App` = $in_app OR `In App` = 0)

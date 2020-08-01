@@ -32,8 +32,6 @@
             <input class="adv" type="text" name="app_name" size="40" value="" placeholder="App Name / Title..."/>
                 
             <input class="adv" type="text" name="dev_name" size="40" value="" placeholder="Developer..."/>
-                
-            
             
             <!-- Search Button is below -->    
             <input class="submit advanced-button" type="submit" name="advanced" value="Search &nbsp; &#xf002; " />

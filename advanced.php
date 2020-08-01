@@ -3,6 +3,7 @@
     $app_name = mysqli_real_escape_string($dbconnect, $_POST['app_name']);
     $developer = mysqli_real_escape_string($dbconnect, $_POST['dev_name']);
 
+
     $find_sql = "SELECT * FROM `game_details`
     JOIN genre ON (game_details.GenreID = genre.GenreID)
     JOIN developer ON (game_details.DeveloperID = developer.DeveloperID)
